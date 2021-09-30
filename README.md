@@ -1,11 +1,11 @@
 # Data-Structure
 
+## Counting
+- Simple_Counting.cpp
+
 ## Looping
 - Switch_case.cpp
 - Switch_case2.cpp
-
-## Counting
-- Simple_Counting.cpp
 
 ## Sorting
 - Insertion sort.cpp
