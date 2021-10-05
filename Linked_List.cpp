@@ -69,6 +69,22 @@ public:
             cout << "Either a or b is NULL\n";
         }
     }
+
+    void front(int n)
+    {
+        node *tmp = new node;
+        tmp -> data = n;
+        tmp -> next = head;
+        head = tmp;
+    }
+
+    void after(node *a, int value)
+    {
+        node* p = new node;
+        p->data = value;
+        p->next = a->next;
+        a->next = p;
+    }
 };
 
 int main()
@@ -76,10 +92,7 @@ int main()
     linked_list a;
     a.add_node(1);
     a.add_node(2);
-    linked_list b;
-    b.add_node(3);
-    b.add_node(4);
-    linked_list::concatenate(a.gethead(),b.gethead());
+    a.front(3);
     linked_list::display(a.gethead());
     return 0;
 }
