@@ -26,5 +26,7 @@
 - Pointer & String.cpp
 - 
 ## Linked List
+- Linked_List.cpp
+- Linked_List1.cpp
 
 
